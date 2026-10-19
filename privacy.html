@@ -60,7 +60,7 @@ footer a{color:inherit}
 <section id="zh" lang="zh-Hant" aria-labelledby="zh-title">
 <h2 id="zh-title">繁體中文</h2>
 <p><a href="#en">English version</a></p>
-<p><strong>生效日期：</strong>2026-10-18　<strong>最後更新：</strong>2026-10-18</p>
+<p><strong>生效日期：</strong>2026-10-19　<strong>最後更新：</strong>2026-10-19</p>
 <div class="summary">
 <p><strong>簡短版</strong></p>
 <ul>
@@ -69,7 +69,7 @@ footer a{color:inherit}
 <li>App 裡沒有廣告、分析工具、追蹤，也沒有第三方 SDK。</li>
 <li>如果你允許定位，座標會送到 Apple 的服務，換成城市名稱。見第 4 節和第 7 節。</li>
 <li>付款與訂閱由 Apple 處理。開發者不會收到你的付款資料、姓名或信用卡。App 只在你的 iPhone 上向 Apple 查詢訂閱狀態。見第 4 節和第 6 節。</li>
-<li>每週免費額度的計數只存在你的 iPhone，開發者看不到。見第 6 節。</li>
+<li>每月免費額度的計數只存在你的 iPhone，開發者看不到。見第 6 節。</li>
 <li>沒有訂閱時，儲存到「照片」或分享出去的照片和影片會加上 Cam2gether 浮水印，訂閱後可以關閉。App 內的媒體庫和即時預覽不會顯示浮水印。見第 6 節。</li>
 <li>只有你自己寫信給開發者時，開發者才會收到你寄來的內容。見第 10 節。</li>
 </ul>
@@ -95,7 +95,7 @@ footer a{color:inherit}
 <li><strong>儲存到「照片」：</strong>Auto-Save 預設是關的。你可以手動儲存，或自己開啟 Auto-Save。開啟前 App 會先問你，而且只對之後拍的內容生效。存進「照片」的副本屬於你的「照片」圖庫。如果你開了 iCloud 照片，會依你的設定同步。</li>
 <li><strong>每個項目的位置紀錄：</strong>見第 7 節。</li>
 <li><strong>設定：</strong>畫質、語言、教學是否看過、浮水印開關（訂閱後可以關閉，訂閱結束後這個選擇仍會保留），以及 Cam2gether 相簿的識別碼。它們留在 App 裡，解除安裝就消失。</li>
-<li><strong>額度計數：</strong>這一週的免費額度已經用掉幾張照片、幾部影片，以及這一週的起算時間，由 App 記在你的 iPhone 上，有兩份：App 的設定資料，和 iOS 的鑰匙圈（Keychain，不同步 iCloud）。見第 6 節。</li>
+<li><strong>額度計數：</strong>這個月的免費額度已經用掉幾張照片、幾部影片，以及每月額度的起算時間，由 App 記在你的 iPhone 上，有兩份：App 的設定資料，和 iOS 的鑰匙圈（Keychain，不同步 iCloud）。見第 6 節。</li>
 <li><strong>訂閱狀態：</strong>由 Apple 的 StoreKit 管理。App 不另外存你的付款資料，需要時在你的 iPhone 上向 Apple 查詢。為了讓下次啟動時，StoreKit 還沒回覆前也能判斷，App 會在 iPhone 上暫存最近一次向 Apple 確認到的訂閱狀態（方案、這一期的到期日、確認時間、是否已取消續訂），每次向 Apple 確認後就更新或刪除。見第 6 節。</li>
 <li><strong>診斷檔：</strong>App 會在你的 iPhone 裡存一份診斷檔，內容是機型、iOS 版本、裝置名稱，以及相機能力和效能的紀錄。裡面沒有照片、影片或位置。它不會傳出去。你在 App 裡看不到它，也沒有按鈕可以刪除，「立即清除 App 內全部媒體」也不會清它。解除安裝 App 才會刪除。</li>
 <li><strong>備份：</strong>iPhone 的備份（iCloud 備份或電腦備份）可能包含 Cam2gether 的媒體和設定。額度計數在 App 設定資料裡的那一份也可能包含在內；鑰匙圈那一份不同步 iCloud。備份由你的 Apple 帳號或電腦保管，開發者拿不到。</li>
@@ -135,18 +135,18 @@ footer a{color:inherit}
 <p>這一節說明 Cam2gether 的收費方式怎麼處理資料。收費條件本身（價格、試用、續訂、取消）在<a href="terms.html#zh">使用條款</a>。</p>
 <h4 id="zh-quota">免費額度</h4>
 <ul>
-<li>雙鏡頭同框模式（子母畫面、上下分割、左右分割）每週有免費額度：30 張照片和 10 部影片，照片和影片分開計算。額度每週重置。</li>
+<li>雙鏡頭同框模式（子母畫面、上下分割、左右分割）每月有免費額度：30 張照片和 10 部影片，照片和影片分開計算。額度每月重置。</li>
 <li>計入額度的，是成功存入 Cam2gether 媒體庫的成品。</li>
-<li>每週從這支 iPhone 第一次讀取額度紀錄的時候起算（通常是第一次開啟 App 時），每滿 7 天（7×24 小時）重置一次。所以每支 iPhone 的重置時間不同，不是固定在每週一。App 會顯示下次重置的時間。</li>
+<li>額度從這支 iPhone 第一次讀取額度紀錄的時候起算（通常是第一次開啟 App 時），之後每個月在同一天、同一時刻重置；遇到比較短、沒有那一天的月份，就在那個月的最後一天重置。所以每支 iPhone 的重置時間不同，不是固定在每月 1 日。用不完的額度不會累積到下個月。App 會顯示下次重置的時間。</li>
 <li>Normal（單一鏡頭）拍攝模式不計入額度。相機開啟和預覽也不會被鎖住。</li>
 <li>某一種額度用完之後，到下次重置之前，要繼續用雙鏡頭拍攝那一種內容就需要訂閱。Normal 單鏡拍攝仍然可以使用。已經拍好的內容不會因此被刪除。</li>
-<li><strong>額度計數存在哪裡：</strong>由 App 記在你的 iPhone 上，有兩份：App 的設定資料（UserDefaults），和 iOS 的鑰匙圈（Keychain；設定為不同步 iCloud，也不會搬到另一支 iPhone）。內容是這一週已用掉的照片張數和影片部數、這一週的起算與開始時間，以及最近最多 64 個隨機產生的拍攝作業編號（用來避免同一次拍攝被重複計數，和你或你的裝置無關）。它不含照片、影片、位置或你的姓名，也沒有任何裝置或使用者識別碼。開發者沒有伺服器，看不到這份紀錄，也不會收到它。</li>
+<li><strong>額度計數存在哪裡：</strong>由 App 記在你的 iPhone 上，有兩份：App 的設定資料（UserDefaults），和 iOS 的鑰匙圈（Keychain；設定為不同步 iCloud，也不會搬到另一支 iPhone）。內容是這個月已用掉的照片張數和影片部數、每月額度的起算時間與這個月的開始時間，以及最近最多 64 個隨機產生的拍攝作業編號（用來避免同一次拍攝被重複計數，和你或你的裝置無關）。它不含照片、影片、位置或你的姓名，也沒有任何裝置或使用者識別碼。開發者沒有伺服器，看不到這份紀錄，也不會收到它。</li>
 <li><strong>重新安裝之後：</strong>重新安裝 App、換新 iPhone 或還原備份之後，額度計數可能保留，也可能重新開始。鑰匙圈那一份留不留得住、備份會搬什麼過去，取決於 iOS 怎麼處理 App 留在裝置上的資料，開發者無法保證。Cam2gether 沒有帳號，所以開發者也沒有辦法在新的 iPhone 上替你找回或重設額度，App 裡也沒有重置額度的功能。</li>
 </ul>
 <h4 id="zh-subscription">訂閱與付款</h4>
 <ul>
 <li>訂閱方案放在「Cam2gether Pro」訂閱群組，有週訂、月訂、年訂，都會自動續訂。價格與條件以 App 裡的購買畫面和 App Store 顯示為準，也見<a href="terms.html#zh">使用條款</a>。</li>
-<li>訂閱期間，雙鏡頭同框拍攝不受每週額度限制，也可以到「設定 › 浮水印」關閉浮水印。</li>
+<li>訂閱期間，雙鏡頭同框拍攝不受每月額度限制，也可以到「設定 › 浮水印」關閉浮水印。</li>
 <li>付款、續訂、取消和退款都由 Apple 處理，綁定你的 Apple 帳號。開發者不會收到你的付款資料、姓名或信用卡。</li>
 <li>Cam2gether 用 Apple 的 StoreKit，在你的 iPhone 上向 Apple 查詢你有沒有有效的訂閱，再決定要不要開放不限量的雙鏡頭拍攝和關閉浮水印的選項。這一步發生在你的 iPhone 和 Apple 之間。Cam2gether 沒有自己的伺服器，也沒有自己的收據驗證服務。</li>
 <li>訂閱狀態由 Apple 保管。App 不另外存你的付款資料，只在你的 iPhone 上暫存最近一次向 Apple 確認到的訂閱狀態，見第 3 節。</li>
@@ -203,7 +203,7 @@ footer a{color:inherit}
 <section id="en" lang="en" aria-labelledby="en-title">
 <h2 id="en-title">English</h2>
 <p><a href="#zh">繁體中文版</a></p>
-<p><strong>Effective date:</strong> 2026-10-18　<strong>Last updated:</strong> 2026-10-18</p>
+<p><strong>Effective date:</strong> 2026-10-19　<strong>Last updated:</strong> 2026-10-19</p>
 <div class="summary">
 <p><strong>Short version</strong></p>
 <ul>
@@ -212,7 +212,7 @@ footer a{color:inherit}
 <li>The app has no ads, no analytics, no tracking and no third-party SDKs.</li>
 <li>If you allow Location, coordinates are sent to Apple's service to get a city name. See sections 4 and 7.</li>
 <li>Apple handles payment and subscriptions. The developer does not receive your payment details, name or credit card. The app only asks Apple, on your iPhone, whether you have a subscription. See sections 4 and 6.</li>
-<li>The weekly free quota counter is kept only on your iPhone, and the developer cannot see it. See section 6.</li>
+<li>The monthly free quota counter is kept only on your iPhone, and the developer cannot see it. See section 6.</li>
 <li>Without a subscription, photos and videos you save to Photos or share carry a Cam2gether watermark, and you can turn it off while you are subscribed. The in-app Library and the live preview do not show it. See section 6.</li>
 <li>The developer receives content only when you choose to email the developer. See section 10.</li>
 </ul>
@@ -238,7 +238,7 @@ footer a{color:inherit}
 <li><strong>Saving to Photos:</strong> Auto-Save is off by default. You can save by hand or turn Auto-Save on yourself. The app asks you first, and it only applies to what you shoot afterwards. Copies saved to Photos belong to your Photos library. If you use iCloud Photos, they sync according to your settings.</li>
 <li><strong>Location record of each item:</strong> see section 7.</li>
 <li><strong>Settings:</strong> quality, language, whether you have seen the tutorial, the watermark switch (you can turn the watermark off while subscribed, and the choice stays after a subscription ends), and the identifier of the Cam2gether album. They stay in the app and disappear when you uninstall it.</li>
-<li><strong>Quota counter:</strong> how many photos and videos of this week's free quota you have used, and when this week started, kept by the app on your iPhone in two places: the app's settings data and the iOS Keychain (not synced to iCloud). See section 6.</li>
+<li><strong>Quota counter:</strong> how many photos and videos of this month's free quota you have used, and the time your months are counted from, kept by the app on your iPhone in two places: the app's settings data and the iOS Keychain (not synced to iCloud). See section 6.</li>
 <li><strong>Subscription status:</strong> managed by Apple's StoreKit. The app does not store your payment details; when it needs the status it asks Apple, on your iPhone. So that the app can decide before StoreKit answers on the next launch, it keeps on your iPhone the last subscription state Apple confirmed (the plan, the end of the current period, when it was confirmed, whether it renews), and updates or removes it after each check with Apple. See section 6.</li>
 <li><strong>Diagnostic file:</strong> the app keeps a diagnostic file on your iPhone. It contains the device model, iOS version, device name, and records of camera capability and performance. It contains no photos, videos or locations. It is never sent anywhere. You cannot see it in the app, there is no button to delete it, and "Clear All Local Media Now" does not clear it. Uninstalling the app deletes it.</li>
 <li><strong>Backups:</strong> iPhone backups (iCloud backup or computer backup) may include Cam2gether's media and settings. The copy of the quota counter in the app's settings data may be included too; the Keychain copy is not synced to iCloud. Your Apple account or your computer keeps those backups. The developer cannot access them.</li>
@@ -278,18 +278,18 @@ footer a{color:inherit}
 <p>This section explains how Cam2gether's paid model handles data. The paid terms themselves (prices, trial, renewal, cancellation) are in the <a href="terms.html#en">Terms of Use</a>.</p>
 <h4 id="en-quota">Free quota</h4>
 <ul>
-<li>The two-camera modes (picture-in-picture, top and bottom, left and right) have a weekly free quota: 30 photos and 10 videos, counted separately. The quota resets every week.</li>
+<li>The two-camera modes (picture-in-picture, top and bottom, left and right) have a monthly free quota: 30 photos and 10 videos, counted separately. The quota resets every month.</li>
 <li>What counts against the quota is a finished photo or video that was successfully saved into Cam2gether's Library.</li>
-<li>The week starts when this iPhone first reads the quota record (usually the first time you open the app) and the quota resets every 7 days (7 x 24 hours). So the reset time differs from iPhone to iPhone and is not fixed on Mondays. The app shows when the next reset is.</li>
+<li>The month starts when this iPhone first reads the quota record (usually the first time you open the app), and the quota then resets on the same day and time each month; in a shorter month that does not have that day, it resets on the last day of that month. So the reset time differs from iPhone to iPhone and is not fixed on the 1st of the month. Unused quota does not carry over to the next month. The app shows when the next reset is.</li>
 <li>Normal (single camera) mode does not count against the quota. Opening the camera and the preview are never locked.</li>
 <li>When one kind of quota is used up and you have no subscription, you need a subscription to keep shooting that kind of content with both cameras until the next reset. Normal single-camera shooting stays available. Content you already shot is not deleted because of this.</li>
-<li><strong>Where the quota counter is kept:</strong> the app records it on your iPhone in two places: the app's settings data (UserDefaults) and the iOS Keychain (set to not sync to iCloud and not to move to another iPhone). It holds how many photos and videos you have used this week, the time your weeks are counted from, when this week began, and up to the last 64 random capture operation IDs (used so that one capture is not counted twice; they have nothing to do with you or your device). It contains no photos, videos, locations or your name, and no device or user identifier. The developer has no server, cannot see this record and does not receive it.</li>
+<li><strong>Where the quota counter is kept:</strong> the app records it on your iPhone in two places: the app's settings data (UserDefaults) and the iOS Keychain (set to not sync to iCloud and not to move to another iPhone). It holds how many photos and videos you have used this month, the time your months are counted from, when this month began, and up to the last 64 random capture operation IDs (used so that one capture is not counted twice; they have nothing to do with you or your device). It contains no photos, videos, locations or your name, and no device or user identifier. The developer has no server, cannot see this record and does not receive it.</li>
 <li><strong>After a reinstall:</strong> after you reinstall the app, move to a new iPhone or restore a backup, the quota counter may be kept or may start over. Whether the Keychain copy survives and what a backup carries over depends on how iOS treats the data an app leaves on the device, and the developer cannot guarantee either result. Cam2gether has no account, so the developer also has no way to recover or reset your quota on a new iPhone, and the app has no function to reset the quota.</li>
 </ul>
 <h4 id="en-subscription">Subscription and payment</h4>
 <ul>
 <li>Subscription plans are in the "Cam2gether Pro" subscription group: weekly, monthly and yearly, all auto-renewing. Prices and conditions are those shown on the in-app purchase screen and in the App Store; see also the <a href="terms.html#en">Terms of Use</a>.</li>
-<li>While you are subscribed, two-camera capture is not limited by the weekly quota, and you can turn the watermark off in "Settings &gt; Watermark".</li>
+<li>While you are subscribed, two-camera capture is not limited by the monthly quota, and you can turn the watermark off in "Settings &gt; Watermark".</li>
 <li>Apple handles payment, renewal, cancellation and refunds, tied to your Apple Account. The developer does not receive your payment details, name or credit card.</li>
 <li>Cam2gether uses Apple's StoreKit to ask Apple, on your iPhone, whether you have an active subscription, and then decides whether to allow unlimited two-camera capture and the option to turn the watermark off. This step is between your iPhone and Apple. Cam2gether has no server of its own and no receipt-validation service of its own.</li>
 <li>Apple keeps the subscription status. The app does not store your payment details; it only keeps on your iPhone the last subscription state Apple confirmed, see section 3.</li>
